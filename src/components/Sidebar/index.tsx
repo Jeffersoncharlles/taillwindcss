@@ -19,7 +19,12 @@ export function SideBar() {
   return (
     <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8  dark:border-zinc-700">
       <Logo />
-      <Input />
+      <Input.Root>
+        <Input.Prefix>
+          <Search className="h-5 w-5 text-zinc-500 " />
+        </Input.Prefix>
+        <Input.Control placeholder="Search" />
+      </Input.Root>
       <nav className="space-y-0.5">
         <NavItem title="Home" icon={Home} />
         <NavItem title="Dashboard" icon={BarChart} />
