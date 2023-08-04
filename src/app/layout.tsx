@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Dashboard',
-  description: 'Create dashboard with tailwindcss',
+  description: 'Create dashboard with tailwind css',
 }
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="antialiased">
       <body className={inter.className}>
         <div className="grid min-h-screen grid-cols-app dark:bg-zinc-900 dark:text-zinc-100 ">
           <SideBar />
