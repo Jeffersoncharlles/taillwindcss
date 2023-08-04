@@ -11,7 +11,7 @@ export function UserSpaceWidget() {
       </div>
 
       <div className="h-2 rounded-full bg-violet-100">
-        <div className="h-2 w-4/5 rounded-full bg-violet-600" />
+        <div className="h-2 w-4/5 rounded-full bg-violet-600 dark:shadow-lg dark:shadow-violet-600/50" />
       </div>
 
       <div className="space-x-3">
@@ -23,7 +23,7 @@ export function UserSpaceWidget() {
         </button>
         <button
           type="button"
-          className="text-sm font-semibold text-violet-700 hover:text-violet-950 dark:text-violet-200 dark:hover:text-violet-100"
+          className="text-sm font-semibold text-violet-700 hover:text-violet-950 dark:text-violet-200   dark:hover:text-violet-100"
         >
           Upgrade plan
         </button>
