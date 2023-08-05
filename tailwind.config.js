@@ -11,6 +11,14 @@ module.exports = {
       maxWidth: {
         app: '700px',
       },
+      borderWidth: {
+        6: '6px',
+      },
+      colors: {
+        violet: {
+          25: '#fcfaff',
+        },
+      },
     },
   },
   plugins: [],
