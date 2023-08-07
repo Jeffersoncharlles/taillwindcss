@@ -10,6 +10,10 @@
   <a href="#key-license">License</a>
 </p>
 
+<h1 align='center'>
+  <img src='./screen/dark.png' width="600"  height="700">
+  <img src='./screen/white.png' width="600"  height="700">
+</h1>
 
 ## Getting Started
 
@@ -30,7 +34,6 @@ This Front-End project was developed using the following technologies:
 
 -   [Next Js][nextjs]
 -   [Typescript][typescript]
--   [Phosphor Icons][phosphoricons]
 
 This project in under MIT license, for more details check in [LICENSE][license]. <br>
 Feel free to bring new features or fix problems, it will be a pleasure! 💜
