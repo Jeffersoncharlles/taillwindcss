@@ -10,9 +10,9 @@
   <a href="#key-license">License</a>
 </p>
 
-<h1 align='center'>
-  <img src='./screen/dark.png' width="600"  height="700">
-  <img src='./screen/white.png' width="600"  height="700">
+<h1 align='center' >
+  <img src='./screen/dark.png' width="300"  height="400">
+  <img src='./screen/white.png' width="300"  height="400">
 </h1>
 
 ## Getting Started
