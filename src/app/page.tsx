@@ -147,42 +147,27 @@ export default function Home() {
                   <SelectItem value="md" text="Markdown" />
                 </Select>
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                  >
+                  <Button type="button" variant="ghost">
                     <Bold className="h-4  w-4 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Italic
                       className="h-4  w-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                  >
+                  </Button>
+                  <Button variant="ghost" type="button">
                     <Link className="h-4  w-4 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                  >
+                  </Button>
+                  <Button variant="ghost" type="button">
                     <List className="h-4  w-4 text-zinc-500" strokeWidth={3} />
-                  </button>
-                  <button
-                    type="button"
-                    className=" rounded-md p-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                  >
+                  </Button>
+                  <Button variant="ghost" type="button">
                     <ListOrdered
                       className="h-4  w-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
+                  </Button>
                 </div>
               </div>
               <TextArea

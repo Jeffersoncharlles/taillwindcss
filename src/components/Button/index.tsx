@@ -11,6 +11,8 @@ const button = tv({
       primary: 'bg-violet-600  text-white  hover:bg-violet-700',
       outline:
         'border border-zinc-300  text-zinc-700  hover:bg-zinc-50 dark:border-zinc-400 dark:text-zinc-300 dark:hover:bg-zinc-800',
+      ghost:
+        'rounded-md p-2 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-500',
     },
   },
 
@@ -19,7 +21,8 @@ const button = tv({
   },
 })
 type ButtonProps = React.ComponentProps<'button'> & VariantProps<typeof button>
-export function Button({ variant, ...rest }: ButtonProps) {
-  return <button className={button({ variant })} {...rest} />
+
+export function Button({ variant, className, ...rest }: ButtonProps) {
+  return <button className={button({ variant, className })} {...rest} />
 }
 //
