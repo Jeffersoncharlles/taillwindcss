@@ -15,7 +15,7 @@ export default function Home() {
       </h1>
       <SettingsTabs />
       <section className="mt-6 flex flex-col ">
-        <div className=" flex items-center justify-between border-b border-zinc-200 pb-5 dark:border-zinc-600">
+        <div className=" flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 dark:border-zinc-600 lg:flex-row lg:items-center">
           <div className="space-y-1">
             <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">
               Personal info
@@ -24,6 +24,7 @@ export default function Home() {
               Update your photo and personal details here
             </span>
           </div>
+
           <div className="flex items-center gap-2">
             <Button type="button" variant="outline">
               Cancel
@@ -37,23 +38,31 @@ export default function Home() {
           id="settings"
           className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200 dark:divide-zinc-800"
         >
-          <div className="grid grid-cols-form gap-3">
+          <div className="flex flex-col  gap-3 lg:grid lg:grid-cols-form">
             <label
               htmlFor="firstName"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
             >
               Name
             </label>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2">
               <Input.Root>
                 <Input.Control id="firstName" defaultValue="Jefferson" />
               </Input.Root>
-              <Input.Root>
-                <Input.Control defaultValue="Charlles" />
-              </Input.Root>
+              <div className="flex flex-col gap-3 lg:block">
+                <label
+                  htmlFor="lastName"
+                  className="text-sm font-medium text-zinc-700 dark:text-zinc-300 lg:sr-only"
+                >
+                  Last name
+                </label>
+                <Input.Root>
+                  <Input.Control id="lastName" defaultValue="Charlles" />
+                </Input.Root>
+              </div>
             </div>
           </div>
-          <div className="grid grid-cols-form gap-3 pt-5">
+          <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="email"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
@@ -71,7 +80,8 @@ export default function Home() {
               />
             </Input.Root>
           </div>
-          <div className="grid grid-cols-form gap-3 pt-5">
+
+          <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="photo"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
@@ -87,7 +97,8 @@ export default function Home() {
               <FileInput.Control />
             </FileInput.Root>
           </div>
-          <div className="grid grid-cols-form gap-3 pt-5">
+
+          <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="role"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
@@ -100,7 +111,7 @@ export default function Home() {
               </Input.Root>
             </div>
           </div>
-          <div className="grid grid-cols-form gap-3 pt-5">
+          <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="country"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
@@ -113,7 +124,7 @@ export default function Home() {
               <SelectItem value="ca" text="Canada" />
             </Select>
           </div>
-          <div className="grid grid-cols-form gap-3 pt-5">
+          <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="timezone"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
@@ -126,7 +137,7 @@ export default function Home() {
               <SelectItem value="ca" text="Africa - Addis_Ababa (UTC+03:00)" />
             </Select>
           </div>
-          <div className="grid grid-cols-form gap-3 pt-5">
+          <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="bio"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
@@ -177,7 +188,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-form gap-3 pt-5">
+          <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="projects"
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
