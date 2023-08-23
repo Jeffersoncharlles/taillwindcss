@@ -19,8 +19,10 @@ import { Profile } from './Profile'
 import { Input } from '../Form/Input'
 import * as Collapsible from '@radix-ui/react-collapsible'
 import { Button } from '../Button'
+import { useTheme } from 'next-themes'
 
 export function SideBar() {
+  const { theme, setTheme } = useTheme()
   return (
     <Collapsible.Root className="fixed left-0 right-0 top-0 z-20 flex flex-col gap-6  border-zinc-200 bg-white p-4 data-[state=open]:bottom-0 dark:bg-zinc-900 lg:right-auto lg:w-80 lg:border-r lg:px-5 lg:py-8 lg:data-[state=closed]:bottom-0">
       <div className="flex items-center justify-between">
@@ -56,6 +58,11 @@ export function SideBar() {
           </nav>
 
           <UserSpaceWidget />
+          <Button
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          >
+            theme
+          </Button>
 
           <div className="h-px bg-zinc-200 dark:bg-zinc-200/30" />
           <Profile />
